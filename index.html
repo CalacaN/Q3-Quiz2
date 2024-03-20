@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Movie Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding-top: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        background-color: #ccffcc; /* Green background */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .movie-info {
+        display: flex;
+        flex-direction: column; /* Align movies vertically */
+        border-bottom: 2px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .movie-info img {
+        max-width: 200px;
+        margin-right: 20px;
+      }
+      .movie-info-content {
+        flex: 1;
+      }
+      .movie-info h2 {
+        color: #006400; /* Dark Green color */
+        margin-top: 0;
+      }
+      footer {
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+        background-color: #006400; /* Dark Green background */
+        color: white;
+      }
+      .search-form {
+        margin-top: 30px;
+        text-align: center;
+      }
+      .search-input {
+        width: 300px;
+      }
+      .search-button {
+        margin-left: 10px;
+      }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Movie Reviews</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Genre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <h1 class="mt-4 mb-3">Netflix Movie Reviews</h1>
+
+    <!-- Movie 1: Mean Girls -->
+    <div class="movie-info">
+        <img src="https://cdn.thehollywoodgossip.com/uploads/2022/03/mean-girls-movie-poster.jpg" alt="Mean Girls">
+        <div class="movie-info-content">
+            <h2>Mean Girls</h2>
+            <p>This movie showed us a lot of things that are relatable, especially for high school students. This movie shows us how some people can be a people pleaser, would do things they dont do, just to please others. They'd do a lot of things just to fit in. All the actors and actresses in this movie had their role that made this movie more interesting. It teaches us a lot of things about life so it's really worth to watch.</p>
+            <div class="review">
+                <h3>Casts</h3>
+                <p>Lindsay Lohan, Rachel McAdams, Amanda Seyfried, Lacey Chabert, Jonathan Bennett, Tina Fey</p>
+            </div>
+            <p><strong>Review/Rating:</strong> 4.5/5</p>
+        </div>
+    </div>
+
+    <!-- Movie 2: Wild Child -->
+    <div class="movie-info">
+        <img src="https://xl.movieposterdb.com/09_01/2008/1024255/xl_1024255_254ae400.jpg" alt="Wild Child">
+        <div class="movie-info-content">
+            <h2>Wild Child</h2>
+            <p>Wild Child is a very entertaining movie, especially for teenagers. It makes us realize the importance of some things and people. It makes us see their real values. We can learn a lot about this movie. Not only for teenagers, but also for parents.             The main actress faces a lot of problems and the dad doesn't know that. By that, the parent watchers can maybe realize some things and do better parenting.</p>
+            <div class="review">
+                <h3>Casts</h3>
+                <p>Emma Roberts, Alex Pettyfer, Juno Temple, Natasha Richardson, Kimberley Nixon, Georgia King, Sophie Wu</p>
+            </div>
+            <p><strong>Review/Rating:</strong> 4.6/5</p>
+        </div>
+    </div>
+
+    <!-- Movie 3: Flipped -->
+    <div class="movie-info">
+        <img src="https://i.pinimg.com/originals/1e/e3/ba/1ee3ba99fc6adcef7df6dc87fdf440de.jpg" alt="Flipped">
+        <div class="movie-info-content">
+            <h2>Flipped</h2>
+            <p>The movie Flipped is a very cute movie. It showed teenage love, which is very silly. They were confused with their feelings which explains most of teenagers love. It's somehow relatable so it's really fun to watch.</p>
+            <div class="review">
+                <h3>Casts</h3>
+                <p>Madeline Carroll, Callan McAuliffe, Aidan Quinn, Penelope Ann Miller, John Mahoney, Anthony Edwards</p>
+            </div>
+            <p><strong>Review/Rating:</strong> 4.7/5</p>
+        </div>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or suggestions, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: info@moviereview.com</li>
+            <li>Phone: 1-800-MOVIE-REVIEW</li>
+            <li>Address: 123 Movie St., Greenhills, San Juan, Philippines</li>
+        </ul>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-form">
+        <form class="d-flex justify-content-center">
+            <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success search-button" type="submit">Search</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+               
